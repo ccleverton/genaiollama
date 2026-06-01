@@ -4,7 +4,7 @@ Generative AI com Ollama
 Instalar .NET 8 SDK \
 https://dotnet.microsoft.com/download \
 Verificar: \
-dotnet --version
+``` dotnet --version ```
 
 
 ### 2. Instalar Docker Desktop
@@ -14,25 +14,25 @@ Ativar: WSL, Virtualization na BIOS (se necessário)
 
 
 ### 3. Instalar Ollama
-https://ollama.com/download \
+https://ollama.com/download \ 
 Após instalação: \
-ollama --version
+``` ollama --version ```
 
 
 ### 4. Baixar modelos do Ollama
 
 Embeddings\
-ollama pull nomic-embed-text
+```ollama pull nomic-embed-text```
 
 Chat LLM\
-ollama pull qwen2.5:7b
+``` ollama pull qwen2.5:7b ```
 
 após downloads executar:\
-ollama list
+``` ollama list ```
 
 
 ### 5. Subir Elasticsearch via Docker
-
+```
 docker run -d ^\
   --name elastic ^\
   -p 9200:9200 ^\
@@ -40,21 +40,22 @@ docker run -d ^\
   -e "discovery.type=single-node" ^\
   -e "xpack.security.enabled=false" ^\
   docker.elastic.co/elasticsearch/elasticsearch:8.12.0
+```
 
 
 Após subir o container verificar no browser:\
-http://localhost:9200
+``` http://localhost:9200 ```
 
 
 ### 6. Dependências do projeto
-
-    "Elasticsearch.Net" Version="7.17.5"  
-    "itext7" Version="9.6.0"  
-    "NEST" Version="7.17.5" 
-  
+```
+     Elasticsearch.Net 7.17.5
+     itext7 9.6.0  
+     NEST 7.17.5
+```
  
 ### 7. Comandos para rodar tudo localmente
 Ordem correta:\
-docker start elastic\
-ollama serve\
-dotnet run
+```docker start elastic```
+```ollama serve```
+```dotnet run```
