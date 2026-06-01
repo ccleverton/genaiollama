@@ -9,7 +9,7 @@ dotnet --version
 
 ### 2. Instalar Docker Desktop
 
-https://www.docker.com/products/docker-desktop
+https://www.docker.com/products/docker-desktop \
 Ativar: WSL, Virtualization na BIOS (se necessário) 
 
 
