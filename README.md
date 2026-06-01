@@ -9,7 +9,7 @@ dotnet --version
 
 2. Instalar Docker Desktop
 
-https://www.docker.com/products/docker-desktop/
+https://www.docker.com/products/docker-desktop
 Ativar: WSL, Virtualization na BIOS (se necessário) 
 
 
@@ -40,8 +40,9 @@ docker run -d ^
   -e "discovery.type=single-node" ^
   -e "xpack.security.enabled=false" ^
   docker.elastic.co/elasticsearch/elasticsearch:8.12.0
-________________________________________
-Testar:
+
+
+Após subir o container verificar no browser:
 http://localhost:9200
 
 
