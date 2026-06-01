@@ -1,32 +1,36 @@
 Generative AI com Ollama
-________________________________________
+
 1. Pré-requisitos
-✔ Instalar .NET 8 SDK
+Instalar .NET 8 SDK
 https://dotnet.microsoft.com/download
 Verificar:
 dotnet --version
-________________________________________
-✔ Instalar Docker Desktop
+
+
+2. Instalar Docker Desktop
+
 https://www.docker.com/products/docker-desktop/
-Ativar:
-•	WSL2 (Windows) 
-•	Virtualization na BIOS (se necessário) 
-________________________________________
-✔ Instalar Ollama
-Ollama
+Ativar: WSL, Virtualization na BIOS (se necessário) 
+
+
+3. Instalar Ollama
 https://ollama.com/download
-Verificar:
+Após instalação:
 ollama --version
-________________________________________
-2. Baixar modelos do Ollama
+
+
+4. Baixar modelos do Ollama
+
 Embeddings
 ollama pull nomic-embed-text
+
 Chat LLM
 ollama pull qwen2.5:7b
-________________________________________
-Verificar:
+
+após downloads executar:
 ollama list
-________________________________________
+
+
 3. Subir Elasticsearch via Docker
 Elasticsearch
 docker run -d ^
@@ -39,14 +43,15 @@ docker run -d ^
 ________________________________________
 Testar:
 http://localhost:9200
-________________________________________
+
+
 4. Criar solução .NET
 dotnet new sln -n GenAI
-
 dotnet new webapi -n GenAI.Api -f net8.0
 
 dotnet sln add GenAI.Api/GenAI.Api.csproj
-________________________________________
+
+
 5. Instalar pacotes NuGet
 Dentro da API:
   <ItemGroup>
@@ -56,35 +61,9 @@ Dentro da API:
     <PackageReference Include="NEST" Version="7.17.5" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
- ________________________________________
-________________________________________
+ 
 6. Rodar tudo localmente
 Ordem correta:
-1. Docker
 docker start elastic
-2. Ollama
 ollama serve
-3. API
 dotnet run
-________________________________________
-7. Fluxo final que você construiu
-PDF Upload
-   ↓
-Extract Text
-   ↓
-Chunking
-   ↓
-Embedding (Ollama)
-   ↓
-Index (Elasticsearch)
-   ↓
-Query Embedding
-   ↓
-Vector Search
-   ↓
-Context
-   ↓
-LLM (Qwen)
-   ↓
-Resposta
-
