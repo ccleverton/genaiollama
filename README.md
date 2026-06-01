@@ -13,21 +13,21 @@ https://www.docker.com/products/docker-desktop \
 Ativar: WSL, Virtualization na BIOS (se necessário) 
 
 
-### 3. Instalar Ollama
-https://ollama.com/download \ 
-Após instalação: \
+### 3. Instalar Ollama 
+https://ollama.com/download
+\
 ``` ollama --version ```
 
 
 ### 4. Baixar modelos do Ollama
 
-Embeddings\
+Embeddings \
 ```ollama pull nomic-embed-text```
 
-Chat LLM\
+Chat LLM \
 ``` ollama pull qwen2.5:7b ```
 
-após downloads executar:\
+após downloads executar: \
 ``` ollama list ```
 
 
@@ -43,7 +43,7 @@ docker run -d ^
 ```
 
 
-Após subir o container verificar no browser:\
+Após subir o container verificar no browser:
 ``` http://localhost:9200 ```
 
 
