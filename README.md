@@ -46,15 +46,8 @@ Após subir o container verificar no browser:\
 http://localhost:9200
 
 
-### 6. Criar solução .NET
-
-dotnet new sln -n GenAI\
-dotnet new webapi -n GenAI.Api -f net8.0\
-dotnet sln add GenAI.Api/GenAI.Api.csproj
-
-
-### 7. Instalar pacotes NuGet
-Dentro da API:
+### 6. Dependências do projeto
+Dentro da API: \
   <ItemGroup>
     <PackageReference Include="Elasticsearch.Net" Version="7.17.5" />
     <PackageReference Include="itext7" Version="9.6.0" />
@@ -63,8 +56,8 @@ Dentro da API:
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
  
-### 8. Rodar tudo localmente
+### 7. Comandos para rodar tudo localmente
 Ordem correta:\
 docker start elastic\
 ollama serve\
-dotnet run\
+dotnet run
