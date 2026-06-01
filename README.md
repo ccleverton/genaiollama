@@ -14,8 +14,8 @@ Ativar: WSL, Virtualization na BIOS (se necessário)
 
 
 ### 3. Instalar Ollama
-https://ollama.com/download
-Após instalação:
+https://ollama.com/download\
+Após instalação:\
 ollama --version
 
 
