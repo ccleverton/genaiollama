@@ -2,8 +2,8 @@ Generative AI com Ollama
 
 ### 1. Pré-requisitos
 Instalar .NET 8 SDK \
-https://dotnet.microsoft.com/download\
-Verificar:\
+https://dotnet.microsoft.com/download \
+Verificar: \
 dotnet --version
 
 
