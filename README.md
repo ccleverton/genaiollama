@@ -22,14 +22,14 @@ ollama --version
 ### 4. Baixar modelos do Ollama
 
 Embeddings\
-ollama pull nomic-embed-text\
+ollama pull nomic-embed-text
 
 Chat LLM\
-ollama pull qwen2.5:7b\
+ollama pull qwen2.5:7b
 
 após downloads executar:\
-ollama list\
-\
+ollama list
+
 
 ### 5. Subir Elasticsearch via Docker
 
