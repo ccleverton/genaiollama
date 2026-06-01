@@ -48,8 +48,8 @@ http://localhost:9200
 
 ### 6. Dependências do projeto
 
-    "Elasticsearch.Net" Version="7.17.5"  \
-    "itext7" Version="9.6.0"  \
+    "Elasticsearch.Net" Version="7.17.5"  
+    "itext7" Version="9.6.0"  
     "NEST" Version="7.17.5" 
   
  
