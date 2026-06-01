@@ -47,14 +47,11 @@ http://localhost:9200
 
 
 ### 6. Dependências do projeto
-Dentro da API: \
-  <ItemGroup>
-    <PackageReference Include="Elasticsearch.Net" Version="7.17.5" />
-    <PackageReference Include="itext7" Version="9.6.0" />
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.27" />
-    <PackageReference Include="NEST" Version="7.17.5" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
-  </ItemGroup>
+Dentro da API: \ 
+    "Elasticsearch.Net" Version="7.17.5" 
+    "itext7" Version="9.6.0" 
+    "NEST" Version="7.17.5" 
+  
  
 ### 7. Comandos para rodar tudo localmente
 Ordem correta:\
